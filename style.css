@@ -1,0 +1,82 @@
+#pagewrapper{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#submit{
+    background-color: navy;
+    color:white;
+    border-radius: 10px;
+    margin:10px;
+    padding: 10px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+h1{
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.comButton{
+    width:150px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:5px;
+    margin:10px 10px 10px 10px;
+    background-color: antiquewhite;
+    border:2px black solid;
+    border-radius:10px;
+    font-family: 'Comic Sans MS', cursive;
+    font-size:20px;
+    text-align: center;
+}
+
+#info{
+    font-family:'Comic Sans MS', cursive;
+    font-size:20px;
+}
+
+a{
+    text-decoration: none;
+    color:blue;
+    font-size:medium;
+}
+.comButton:active{
+    background-color: aliceblue;
+}
+img{
+    height:50px;
+}
+
+
+@media only screen and (max-width:900px){
+    .comButton{
+        width:100px;
+        height:100px;
+        margin:5px;
+        padding:5px;
+        
+    }
+    img{
+        height:30px;
+        margin-top:10px;
+        margin-bottom:-10px;
+    }
+}
