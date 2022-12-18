@@ -12,6 +12,12 @@ function speakMessage(clicked_id) {
       return voice.name == "Kyoko";
     })[0];
     window.speechSynthesis.speak(yaoi);
+  } else if (clicked_id === "yuri") {
+    let yuri = new SpeechSynthesisUtterance("ゆり");
+    yuri.voice = speechSynthesis.getVoices().filter(function (voice) {
+      return voice.name == "Kyoko";
+    })[0];
+    window.speechSynthesis.speak(yuri);
   } else {
     window.speechSynthesis.speak(msg);
   }
