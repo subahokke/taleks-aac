@@ -1,9 +1,10 @@
 var msg = new SpeechSynthesisUtterance();
-msg.lang = 'en-US';
+
 
 function speakMessage(clicked_id){
     let messageText = clicked_id;
     msg.text = messageText;
+    msg.lang = 'en-US';
     window.speechSynthesis.speak(msg);
     }
 
