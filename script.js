@@ -8,7 +8,7 @@ function speakMessage(clicked_id) {
   msg.text = clicked_id;
   if (clicked_id === "yaoi") {
     let yaoi = new SpeechSynthesisUtterance("やおい");
-    msg.voice = speechSynthesis.getVoices().filter(function (voice) {
+    yaoi.voice = speechSynthesis.getVoices().filter(function (voice) {
       return voice.name == "Kyoko";
     })[0];
     window.speechSynthesis.speak(yaoi);
