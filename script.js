@@ -18,6 +18,18 @@ function speakMessage(clicked_id) {
       return voice.name == "Kyoko";
     })[0];
     window.speechSynthesis.speak(yuri);
+  } else if (clicked_id === "hokuto") {
+    let hokuto = new SpeechSynthesisUtterance("ほくと");
+    hokuto.voice = speechSynthesis.getVoices().filter(function (voice) {
+      return voice.name == "Kyoko";
+    })[0];
+    window.speechSynthesis.speak(hokuto);
+  } else if (clicked_id === "takane") {
+    let takane = new SpeechSynthesisUtterance("たかね");
+    takane.voice = speechSynthesis.getVoices().filter(function (voice) {
+      return voice.name == "Kyoko";
+    })[0];
+    window.speechSynthesis.speak(takane);
   } else {
     window.speechSynthesis.speak(msg);
   }
