@@ -30,6 +30,12 @@ function speakMessage(clicked_id) {
       return voice.name == "Kyoko";
     })[0];
     window.speechSynthesis.speak(takane);
+  } else if (clicked_id === "hokunui") {
+    let hokunui = new SpeechSynthesisUtterance("ほくぬい");
+    hokunui.voice = speechSynthesis.getVoices().filter(function (voice) {
+      return voice.name == "Kyoko";
+    })[0];
+    window.speechSynthesis.speak(hokunui);
   } else {
     window.speechSynthesis.speak(msg);
   }
